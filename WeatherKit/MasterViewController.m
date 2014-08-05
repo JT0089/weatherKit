@@ -130,8 +130,8 @@
     [cell addSubview:lblDayOfWeek];
     
     // High & Low Temp
-    int highTemp = [self convertStringToRoundedInt:[openWeather.temp objectForKey:@"max"]];
-    int lowTemp = [self convertStringToRoundedInt:[openWeather.temp objectForKey:@"min"]];
+    int highTemp = (int)([[openWeather.temp objectForKey:@"max"] doubleValue] + 0.5);
+    int lowTemp = (int)([[openWeather.temp objectForKey:@"min"] doubleValue] + 0.5);
     NSString* tempText = [NSString stringWithFormat:@"%i\u00B0 \\ %i\u00B0", highTemp, lowTemp];
 
     UILabel *lblTemps = [[UILabel alloc]initWithFrame:CGRectMake(cell.frame.size.width - 100,0,100,cell.frame.size.height)];
@@ -157,15 +157,6 @@
     });
     [cell addSubview:imgWeatherIcon];
     return cell;
-}
-
-- (int)convertStringToRoundedInt: (NSString*) value
-{
-    int highTempRounded = 0;
-    double highTemp = [value doubleValue];
-    highTempRounded = (int)(highTemp + (highTemp>0 ? 0.5 : -0.5));
-    
-    return highTempRounded;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

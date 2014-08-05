@@ -53,40 +53,31 @@
         self.descriptionLabel.text = [description capitalizedString];
         
         // High Temp
-        int highTemp = [self convertStringToRoundedInt:[self.detailItem.temp objectForKey:@"max"]];
+        int highTemp = (int)([[self.detailItem.temp objectForKey:@"max"] doubleValue] + 0.5);
         NSString* highTempText = [NSString stringWithFormat:@"%i\u00B0", highTemp];
         self.highTempLabel.text = highTempText;
 
         // Low Temp
-        int lowTemp = [self convertStringToRoundedInt:[self.detailItem.temp objectForKey:@"min"]];
+        int lowTemp = (int)([[self.detailItem.temp objectForKey:@"min"] doubleValue] + 0.5);
         NSString* lowTempText = [NSString stringWithFormat:@"%i\u00B0", lowTemp];
         self.lowTempLabel.text = lowTempText;
         
         // Wind MPH
-        int wind = [self convertStringToRoundedInt:self.detailItem.speed];
+        int wind = (int)([self.detailItem.speed doubleValue] + 0.5);
         self.windLabel.text = [NSString stringWithFormat:@"%i mph",wind];
 
         // Humidity %
-        int humidity = [self convertStringToRoundedInt:self.detailItem.humidity];
+        int humidity = (int)([self.detailItem.humidity doubleValue] + 0.5);
         self.humidityLabel.text = [NSString stringWithFormat:@"%d%%", humidity];
         
         // Clouds %
-        int clouds = [self convertStringToRoundedInt:self.detailItem.clouds];
+        int clouds = (int)([self.detailItem.clouds doubleValue] + 0.5);
         self.cloudsLabel.text = [NSString stringWithFormat:@"%d%%", clouds];
         
         // Pressure mmHg
-        int pressure = [self convertStringToRoundedInt:self.detailItem.pressure];
+        int pressure = (int)([self.detailItem.pressure doubleValue] + 0.5);
         self.pressureLabel.text = [NSString stringWithFormat:@"%i mmHg", pressure];
     }
-}
-
-- (int)convertStringToRoundedInt: (NSString*) value
-{
-    int highTempRounded = 0;
-    double highTemp = [value doubleValue];
-    highTempRounded = (int)(highTemp + (highTemp>0 ? 0.5 : -0.5));
-    
-    return highTempRounded;
 }
 
 - (void)viewDidLoad
