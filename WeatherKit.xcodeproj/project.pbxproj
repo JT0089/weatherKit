@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		888F1F2A199082E500783F4C /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 888F1F21199081D300783F4C /* libRestKit.a */; };
 		88F40BC0198EE8AC008871D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40BBF198EE8AC008871D4 /* Foundation.framework */; };
 		88F40BC2198EE8AC008871D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40BC1198EE8AC008871D4 /* CoreGraphics.framework */; };
 		88F40BC4198EE8AC008871D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40BC3198EE8AC008871D4 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		88F40BE4198EE8AC008871D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40BC3198EE8AC008871D4 /* UIKit.framework */; };
 		88F40BEC198EE8AC008871D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F40BEA198EE8AC008871D4 /* InfoPlist.strings */; };
 		88F40BEE198EE8AC008871D4 /* WeatherKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F40BED198EE8AC008871D4 /* WeatherKitTests.m */; };
-		88F40C08198EEB8A008871D4 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40BFF198EEAA0008871D4 /* libRestKit.a */; };
 		88F40C0E198EEBB4008871D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40C09198EEBB4008871D4 /* CFNetwork.framework */; };
 		88F40C0F198EEBB4008871D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40C0A198EEBB4008871D4 /* CoreData.framework */; };
 		88F40C10198EEBB4008871D4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F40C0B198EEBB4008871D4 /* MobileCoreServices.framework */; };
@@ -32,6 +32,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		888F1F20199081D300783F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		888F1F22199081D300783F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		888F1F24199081D300783F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		888F1F26199081D300783F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		888F1F281990826100783F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 		88F40BE5198EE8AC008871D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88F40BB4198EE8AC008871D4 /* Project object */;
@@ -39,44 +74,10 @@
 			remoteGlobalIDString = 88F40BBB198EE8AC008871D4;
 			remoteInfo = WeatherKit;
 		};
-		88F40BFE198EEAA0008871D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D1614564E810060A5C5;
-			remoteInfo = RestKit;
-		};
-		88F40C00198EEAA0008871D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D2614564E820060A5C5;
-			remoteInfo = RestKitTests;
-		};
-		88F40C02198EEAA0008871D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E62145651060060A5C5;
-			remoteInfo = RestKitFramework;
-		};
-		88F40C04198EEAA0008871D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E78145651060060A5C5;
-			remoteInfo = RestKitFrameworkTests;
-		};
-		88F40C06198EEB77008871D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 25160D1514564E810060A5C5;
-			remoteInfo = RestKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		888F1F19199081D300783F4C /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "Downloads/RestKit-0.20.3/RestKit.xcodeproj"; sourceTree = "<group>"; };
 		88F40BBC198EE8AC008871D4 /* WeatherKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F40BBF198EE8AC008871D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88F40BC1198EE8AC008871D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,7 +99,6 @@
 		88F40BE9198EE8AC008871D4 /* WeatherKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherKitTests-Info.plist"; sourceTree = "<group>"; };
 		88F40BEB198EE8AC008871D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88F40BED198EE8AC008871D4 /* WeatherKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherKitTests.m; sourceTree = "<group>"; };
-		88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "../../Downloads/RestKit-0.20.3/RestKit.xcodeproj"; sourceTree = "<group>"; };
 		88F40C09198EEBB4008871D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		88F40C0A198EEBB4008871D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		88F40C0B198EEBB4008871D4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -113,12 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888F1F2A199082E500783F4C /* libRestKit.a in Frameworks */,
 				88F40C0E198EEBB4008871D4 /* CFNetwork.framework in Frameworks */,
 				88F40C0F198EEBB4008871D4 /* CoreData.framework in Frameworks */,
 				88F40C10198EEBB4008871D4 /* MobileCoreServices.framework in Frameworks */,
 				88F40C11198EEBB4008871D4 /* Security.framework in Frameworks */,
 				88F40C12198EEBB4008871D4 /* SystemConfiguration.framework in Frameworks */,
-				88F40C08198EEB8A008871D4 /* libRestKit.a in Frameworks */,
 				88F40BC2198EE8AC008871D4 /* CoreGraphics.framework in Frameworks */,
 				88F40BC4198EE8AC008871D4 /* UIKit.framework in Frameworks */,
 				88F40BC0198EE8AC008871D4 /* Foundation.framework in Frameworks */,
@@ -138,10 +138,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		888F1F1A199081D300783F4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				888F1F21199081D300783F4C /* libRestKit.a */,
+				888F1F23199081D300783F4C /* RestKitTests.octest */,
+				888F1F25199081D300783F4C /* RestKit.framework */,
+				888F1F27199081D300783F4C /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		88F40BB3198EE8AC008871D4 = {
 			isa = PBXGroup;
 			children = (
-				88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */,
+				888F1F19199081D300783F4C /* RestKit.xcodeproj */,
 				88F40BC5198EE8AC008871D4 /* WeatherKit */,
 				88F40BE7198EE8AC008871D4 /* WeatherKitTests */,
 				88F40BBE198EE8AC008871D4 /* Frameworks */,
@@ -221,17 +232,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		88F40BF8198EEAA0008871D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				88F40BFF198EEAA0008871D4 /* libRestKit.a */,
-				88F40C01198EEAA0008871D4 /* RestKitTests.octest */,
-				88F40C03198EEAA0008871D4 /* RestKit.framework */,
-				88F40C05198EEAA0008871D4 /* RestKitFrameworkTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,7 +246,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				88F40C07198EEB77008871D4 /* PBXTargetDependency */,
+				888F1F291990826100783F4C /* PBXTargetDependency */,
 			);
 			name = WeatherKit;
 			productName = WeatherKit;
@@ -298,8 +298,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 88F40BF8198EEAA0008871D4 /* Products */;
-					ProjectRef = 88F40BF7198EEAA0008871D4 /* RestKit.xcodeproj */;
+					ProductGroup = 888F1F1A199081D300783F4C /* Products */;
+					ProjectRef = 888F1F19199081D300783F4C /* RestKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -311,32 +311,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		88F40BFF198EEAA0008871D4 /* libRestKit.a */ = {
+		888F1F21199081D300783F4C /* libRestKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRestKit.a;
-			remoteRef = 88F40BFE198EEAA0008871D4 /* PBXContainerItemProxy */;
+			remoteRef = 888F1F20199081D300783F4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		88F40C01198EEAA0008871D4 /* RestKitTests.octest */ = {
+		888F1F23199081D300783F4C /* RestKitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitTests.octest;
-			remoteRef = 88F40C00198EEAA0008871D4 /* PBXContainerItemProxy */;
+			remoteRef = 888F1F22199081D300783F4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		88F40C03198EEAA0008871D4 /* RestKit.framework */ = {
+		888F1F25199081D300783F4C /* RestKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = RestKit.framework;
-			remoteRef = 88F40C02198EEAA0008871D4 /* PBXContainerItemProxy */;
+			remoteRef = 888F1F24199081D300783F4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		88F40C05198EEAA0008871D4 /* RestKitFrameworkTests.octest */ = {
+		888F1F27199081D300783F4C /* RestKitFrameworkTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitFrameworkTests.octest;
-			remoteRef = 88F40C04198EEAA0008871D4 /* PBXContainerItemProxy */;
+			remoteRef = 888F1F26199081D300783F4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -386,15 +386,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		888F1F291990826100783F4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 888F1F281990826100783F4C /* PBXContainerItemProxy */;
+		};
 		88F40BE6198EE8AC008871D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88F40BBB198EE8AC008871D4 /* WeatherKit */;
 			targetProxy = 88F40BE5198EE8AC008871D4 /* PBXContainerItemProxy */;
-		};
-		88F40C07198EEB77008871D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RestKit;
-			targetProxy = 88F40C06198EEB77008871D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,8 +505,8 @@
 				GCC_PREFIX_HEADER = "WeatherKit/WeatherKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "WeatherKit/WeatherKit-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
@@ -524,8 +524,8 @@
 				GCC_PREFIX_HEADER = "WeatherKit/WeatherKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "WeatherKit/WeatherKit-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
